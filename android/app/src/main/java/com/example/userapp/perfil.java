@@ -44,6 +44,7 @@ public class perfil extends AppCompatActivity implements View.OnClickListener {
 
         logOut.setOnClickListener(this);
         newCita.setOnClickListener(this);
+        verCitas.setOnClickListener(this);
 
         if (auth.getCurrentUser() == null) {
 
@@ -84,6 +85,12 @@ public class perfil extends AppCompatActivity implements View.OnClickListener {
                 Intent intent = new Intent(this, solicitarCitaDatosPersonales.class);
                 intent.putExtra("id",user.id);
                 startActivity(intent);
+                finish();
+                break;
+            case R.id.verCitas:
+                Intent m = new Intent(this, citas.class);
+                m.putExtra("id",user.id);
+                startActivity(m);
                 finish();
                 break;
         }

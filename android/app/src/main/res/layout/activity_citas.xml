@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="896dp"
+    android:background="@drawable/vercitas"
+    tools:context=".citas">
+
+    <Button
+        android:id="@+id/volver"
+        android:layout_width="0dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="50dp"
+        android:background="#E4EAFC"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="volver"
+        android:textColor="#3184CD"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listaCitas" />
+
+    <TextView
+        android:id="@+id/usuarioNameCita5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="242dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="cargando.."
+        android:textColor="#faffff"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/listaCitas"
+        android:layout_width="349dp"
+        android:layout_height="457dp"
+        android:layout_marginTop="172dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usuarioNameCita5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

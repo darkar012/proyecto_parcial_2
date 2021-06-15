@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.UserApp">
-        <activity android:name=".mensajeFinal"></activity>
+        <activity android:name=".citas"></activity>
+        <activity android:name=".mensajeFinal" />
         <activity android:name=".SolicitarDatosUbicacionFecha" />
         <activity android:name=".solicitarDatosUbicacion" />
         <activity android:name=".solicitarCitaDatosPersonales" />

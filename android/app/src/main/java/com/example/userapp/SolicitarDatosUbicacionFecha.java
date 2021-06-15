@@ -199,8 +199,10 @@ public class SolicitarDatosUbicacionFecha extends AppCompatActivity implements V
                 if (date == null || hour == null){
                     Toast.makeText(this, "No ha seleccionado una fecha o una hora", Toast.LENGTH_SHORT).show();
                 } else {
-                    CitaSolicitud cita = new CitaSolicitud(id,nombre,correo,telefono,tipo,descripcionProblema,direccion,piso,descripDir,date,hour);
-                    db.getReference().child("citaSolicitudes").child(id).child(tipo).setValue(cita);
+
+                    String key = db.getReference().child("citaSolicitudes").push().getKey();
+                    CitaSolicitud cita = new CitaSolicitud(id,key,nombre,correo,telefono,tipo,descripcionProblema,direccion,piso,descripDir,date,hour);
+                    db.getReference().child("citaSolicitudes").child(key).setValue(cita   );
                     Intent i = new Intent(this, mensajeFinal.class);
                     i.putExtra("id", id);
                     startActivity(i);

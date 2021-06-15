@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home
+    </title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <header>
+        <div id = "menu">
+            <img src="./imagenes/logo.png">
+        <p>menú</p>
+        </div>
+        <div id="admin">
+            <p>Administrador:</p>
+            <p id="adminName">Cargando...</p>
+        </div>
+    </header>
+    <div id="banner">
+        <div id="botonesBanner">
+        <button> Registrar Técnico
+        </button>
+        <button>Ver Técnicos</button>
+    </div>
+    </div>
+    <div id="solicitudes">
+        <h2> Solicitudes Actuales</h2>
+        <h4>selecciona una de tus solicitudes</h4>
+        <div id="solicitudesPendientes">
+            
+        </div>
+        
+    </div>
+</body>
+</html>
+<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase.js"></script>
+<script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+      apiKey: "AIzaSyCFFSB2VtAlEZnuQaN5ybQPQ5upWYtcbOQ",
+      authDomain: "proyecto-final-db31f.firebaseapp.com",
+      databaseURL: "https://proyecto-final-db31f-default-rtdb.firebaseio.com",
+      projectId: "proyecto-final-db31f",
+      storageBucket: "proyecto-final-db31f.appspot.com",
+      messagingSenderId: "134016709809",
+      appId: "1:134016709809:web:e86c8a6626be9e9b9dde90",
+      measurementId: "G-EPD56GV4GD"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <script src = "component/Solicitud.js"></script>
+  <script src = "js/index.js"></script>
