@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="896dp"
+android:background="@drawable/solicitarcitar"
+    tools:context=".solicitarCitaDatosPersonales">
+
+    <Button
+        android:id="@+id/siguiente1"
+        android:layout_width="347dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginBottom="84dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="siguiente"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="20dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="22dp"
+        app:layout_constraintBottom_toBottomOf="@+id/numeroETCita"
+        app:layout_constraintStart_toStartOf="@+id/numeroETCita"
+        app:srcCompat="@drawable/numero" />
+
+    <EditText
+        android:id="@+id/numeroETCita"
+        android:layout_width="352dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="N° de contacto"
+        android:inputType="phone"
+        android:paddingLeft="42sp"
+        android:paddingBottom="15sp"
+        android:textColor="#020101"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/correoETCita" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="20dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/correoETCita"
+        app:layout_constraintStart_toStartOf="@+id/correoETCita"
+        app:srcCompat="@drawable/arroba" />
+
+    <EditText
+        android:id="@+id/correoETCita"
+        android:layout_width="352dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="Correo"
+        android:inputType="textWebEmailAddress"
+        android:paddingLeft="42sp"
+        android:paddingBottom="15sp"
+        android:textColor="#020101"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombreETCita" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="20dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginBottom="22dp"
+        app:layout_constraintBottom_toBottomOf="@+id/nombreETCita"
+        app:layout_constraintStart_toStartOf="@+id/nombreETCita"
+        app:srcCompat="@drawable/user" />
+
+    <EditText
+        android:id="@+id/nombreETCita"
+        android:layout_width="352dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="152dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="Nombre Completo"
+        android:inputType="textPersonName"
+        android:paddingLeft="42sp"
+        android:paddingBottom="15sp"
+        android:textColor="#020101"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usuarioNameCita" />
+
+    <TextView
+        android:id="@+id/usuarioNameCita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="242dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="cargando.."
+        android:textColor="#faffff"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/customIconSpinner"
+        android:layout_width="264dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="115dp"
+        android:background="@drawable/spinner_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.17"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numeroETCita" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Descripción del Problema"
+        android:textColor="#817F7F"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/customIconSpinner" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="29dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="200 palabras máximo"
+        android:textColor="#817F7F"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descripcionETCita" />
+
+    <EditText
+        android:id="@+id/descripcionETCita"
+        android:layout_width="0dp"
+        android:layout_height="143dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/button_spinner"
+        android:ems="10"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:padding="10dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

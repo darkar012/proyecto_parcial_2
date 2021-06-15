@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".register"
+    android:background="@drawable/registerp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/register" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="127dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Ya tienes una cuenta?"
+        android:textColor="#817F7F"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toStartOf="@+id/loginLink"
+        app:layout_constraintHorizontal_bias="0.94"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerBtn" />
+
+    <TextView
+        android:id="@+id/loginLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="88dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Inicia sesión"
+        android:textColor="#0088FF"
+        app:layout_constraintBottom_toBottomOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/registerBtn"
+        android:layout_width="347dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="31dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Registrate"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/repasswordETregister" />
+
+    <EditText
+        android:id="@+id/repasswordETregister"
+        android:layout_width="352dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="Vuelva a escribir la contraseña"
+        android:inputType="textPassword"
+        android:paddingLeft="42sp"
+        android:paddingBottom="15sp"
+        android:textColor="#020101"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/passwordETregister" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="17dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginBottom="26dp"
+        app:layout_constraintBottom_toBottomOf="@+id/repasswordETregister"
+        app:layout_constraintStart_toStartOf="@+id/repasswordETregister"
+        app:srcCompat="@drawable/locked" />
+
+    <EditText
+        android:id="@+id/passwordETregister"
+        android:layout_width="352dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:paddingLeft="42sp"
+        android:paddingBottom="15sp"
+        android:textColor="#020101"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/numeroET" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="17dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginBottom="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/passwordETregister"
+        app:layout_constraintStart_toStartOf="@+id/passwordETregister"
+        app:srcCompat="@drawable/locked" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="20dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/numeroET"
+        app:layout_constraintStart_toStartOf="@+id/numeroET"
+        app:srcCompat="@drawable/numero" />
+
+    <EditText
+        android:id="@+id/numeroET"
+        android:layout_width="352dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="N° de contacto"
+        android:inputType="phone"
+        android:paddingLeft="42sp"
+        android:paddingBottom="15sp"
+        android:textColor="#020101"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/correoETRegister" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="20dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/correoETRegister"
+        app:layout_constraintStart_toStartOf="@+id/correoETRegister"
+        app:srcCompat="@drawable/arroba" />
+
+    <EditText
+        android:id="@+id/correoETRegister"
+        android:layout_width="352dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="Correo"
+        android:inputType="textWebEmailAddress"
+        android:paddingLeft="42sp"
+        android:paddingBottom="15sp"
+        android:textColor="#020101"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/nombreET" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="20dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="22dp"
+        app:layout_constraintBottom_toBottomOf="@+id/nombreET"
+        app:layout_constraintStart_toStartOf="@+id/nombreET"
+        app:srcCompat="@drawable/user" />
+
+    <EditText
+        android:id="@+id/nombreET"
+        android:layout_width="352dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="Nombre Completo"
+        android:inputType="textPersonName"
+        android:paddingLeft="42sp"
+        android:paddingBottom="15sp"
+        android:textColor="#020101"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="248dp"
+        android:layout_marginEnd="177dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Registrar"
+        android:textColor="#5B5454"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.24"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>

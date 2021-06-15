@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">user app</string>
+
+    <string-array name="electrodomesticos">
+        <item>Nevera</item>
+        <item>Lavadora</item>
+        <item>Estufa</item>
+        <item>Boiler</item>
+        <item>Aire Acondicionado</item>
+    </string-array>
+</resources>
