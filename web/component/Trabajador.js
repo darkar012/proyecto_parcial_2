@@ -74,7 +74,7 @@ class Trabajador {
             trabajadorNombre: this.trab.nombre,
             trabajadorTel: this.trab.Tel
             }
-            database.ref("citasConfirmadas/"+citaConfirm.id).set(citaConfirm);
+            database.ref("citasConfirmadas/"+citaConfirm.id+"/"+cita.tipo).set(citaConfirm);
             database.ref("citaSolicitudes/"+ this.id).remove();
             let trabajador = {
                 id: this.trab.id,
